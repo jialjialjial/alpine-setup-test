@@ -5,7 +5,7 @@ apk update
 
 # Sudo things
 apk add sudo
-sed -i '/# %wheel ALL=\(ALL\) ALL/c %wheel ALL=(ALL) ALL' /etc/sudoers
+echo '%wheel ALL=(ALL) ALL' >> /etc/sudoers
 
 # Groups for xorg or something
 for u in $(ls /home); do for g in disk lp input audio cdrom dialout video netdev games users; do addgroup $u $g; done;done

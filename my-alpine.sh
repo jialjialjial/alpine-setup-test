@@ -17,7 +17,7 @@ setup-xorg-base
 setup-devd udev
 
 # Same
-apk add dbus dbux-x11
+apk add dbus dbus-x11
 rc-update add dbus
 
 # GPU drivers
@@ -28,7 +28,7 @@ echo radeon >> /etc/modules
 echo fbcon >> /etc/modules
 
 apk add mkinitfs
-echo features="keymap cryptsetup kms ata base ide scsi usb virtio ext4" > /etc/mkinitfs/mkinitfs.conf
+echo "features=\"keymap cryptsetup kms ata base ide scsi usb virtio ext4\"" > /etc/mkinitfs/mkinitfs.conf
 mkinitfs
 
 # i3wm and some other related things

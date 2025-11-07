@@ -42,8 +42,8 @@ fi
 EOF
 
 # Using my i3wm config
-mkdir -p ~/.config/i3
-cp config ~/.config/i3
+mkdir -p /home/italo/.config/i3
+cp config /home/italo/.config/i3
 
 # Keyboard layout config
 mkdir -p /etc/X11/xorg.conf.d

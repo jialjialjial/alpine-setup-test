@@ -43,7 +43,7 @@ EOF
 
 # Using my i3wm config
 mkdir -p /home/italo/.config/i3
-cp config /home/italo/.config/i3
+cat config > /home/italo/.config/i3/config
 
 # Keyboard layout config
 mkdir -p /etc/X11/xorg.conf.d

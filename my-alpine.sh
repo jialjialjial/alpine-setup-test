@@ -1,6 +1,8 @@
 # Enable community server
 setup-apkrepos -c
 
+apk update
+
 # Sudo things
 apk add sudo
 sed -i '/# %wheel ALL=\(ALL\) ALL/c %wheel ALL=(ALL) ALL' /etc/sudoers

@@ -32,7 +32,7 @@ echo "features=\"keymap cryptsetup kms ata base ide scsi usb virtio ext4\"" > /e
 mkinitfs
 
 # i3wm and some other related things
-apk add i3wm i3status xterm xf86-video-fbdev xf86-video-vesa font-terminus rofi
+apk add i3wm i3status xf86-video-fbdev xf86-video-vesa font-terminus rofi
 
 # Start i3wm when italo logs in
 cat <<EOF >> /home/italo/.profile
